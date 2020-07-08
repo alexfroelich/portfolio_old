@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway:300,400,500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/fbca4ba8c9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
@@ -14,122 +11,211 @@
 </head>
 <body>
     
-    <main class="wrapper">
+    <main class="wrapper" id="wrapper">
+       
         <article class="resume">
-            <section class="grid-area name">
-                <h1 class="full-name">Alexander Froelich</h1>
-                <h4 class="position" >Desenvolvedor</h4>
-            </section>
-      
-            <section class="grid-area about">
-                <h4 class="section-title">SOBRE</h4 >
-                    <hr>
-                        <div class="about-text">
-                            <p>Alexander Augusto Froelich é brasileiro, nascido em São José dos Pinhais - Paraná.
-                                Tem 29 anos, formado em Engenharia Elétrica e pós graduado em Desenvolvimento de Jogos Digitais. 
-                            </p> 
-                            <p>   Além da programação, gosta muito de jogar videogame e estudar. 
-                            </p>
-                            <p>   Idiomas: Português, Inglês, Espanhol, Francês (intermediário) 
-                            </p>
-                        </div>
-                    <hr>    
-            </section>
-            
-            <section class="grid-area skills">
-                <h4 class="section-title"></h4>
+           
+            <section class="header">
+             
+                    <ul  class="header-items">
+                        <li id="header-about" class="translate">About</li>
+                        <li id ="header-showcase" class="translate">Showcase</li>
+                        <li id="lang-pt">PT</li>
+                        <li id="lang-en">EN</li>
+                        <li><i class="fas fa-moon change-theme"></i></li>
+                    </ul>
                
-                    <div class="skill-cards">
+            </section>
 
-                        <div class="skill-card">
-                            <div class="skill-description" >
-                            <h2>Programação</h2>
-                            <i class="fas fa-laptop-code fa-3x"></i>
-                               
-                               <p>C#, C++, JavaScript, Python, Swift</p>
-                            </div>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-description" >
-                            <h2>Front End</h2>
-                            
-                            <i class="far fa-file-code fa-3x"></i>
-                                <p>HTML, CSS, JS, Bootstrap</p>
-                            </div>
-                        </div>
-                        <div class="skill-card">
-                            <div class="skill-description" >
-                            <h2>Desenvolvimento de Jogos</h2>
-                            <i class="fas fa-gamepad fa-3x"></i>
-                               
-                                <p>Unity3D, Godot Engine, GameMaker Studio 2</p> 
-                            </div>
-                        </div>
-                    </div>
-               
+            <section class="grid-area name">
+                <h1 id="full-name">Alexander Froelich</h1>
+                <h4 id="position" class="translate">Developer</h4>
+                <h6 id="email">alexfroelich05@gmail.com</h6>
             </section>
+          
+            <section class="grid-area about">
+                <h2 id="about-title" class="translate">About</h2>
+                <p id="about-text" class="translate">Game programmer (Unity). Also knows Python, JavaScript, HTML, CSS, C++ and Swift. </p>
+            </section>
+          
             <section class="grid-area showcase">
-                <h4 class="section-title">JOGOS DESENVOLVIDOS</h4>
+                <h2 class="section-title translate" id="showcase-title">GAMES DEVELOPED</h2>
                 <hr>
 
                 <div class="cards">
 
-                    <div class="card">
-                      
-                        <img class="game-image"
-                            src="assets/castora.jpg"
-                            alt="Castora">
-                        
-                      
-                        <div class="game-description" >
-                            <h2 >CASTORA</h2>
-                            <ul>
-                                <li class="description-item">Segundo jogo mais votado Global Game Jam 2020 - Curitiba</li class="description-item">
-                                <li class="description-item">Multiplayer Local (Cooperativo)</li>
-                                <li class="description-item">Compatível com Joystick</li>
-                                <li class="description-item"> Disponivel para jogar <a href="http://alexfroelich.itch.io/castora">AQUI</a></li>
-                            </ul>   
-                        </div>
-                    </div> 
-              
+                    
                     
                     <div class="card">
-                       
+                        <h2 class="game-name mobile-only">CASTORA</h2>
+                      <div class="card-image">
+                        <img class="game-image" id="castora-main-image"
+                            src="assets/castora.jpg"
+                                alt="Castora">
+                            
+                        <div class="game-gallery" >
 
-                        <img class="game-image"
+                            <img class="game-gallery-image castora-img"
+                                src="assets/castora.jpg"
+                                alt="Castora">
+                            <img class="game-gallery-image castora-img"
+                                src="assets/castora_2.png"
+                                alt="Castora">
+                            <img class="game-gallery-image castora-img"
+                                src="assets/castora_2.png"
+                                alt="Castora">
+                            <img class="game-gallery-image castora-img"
+                                src="assets/castoraGameOver.jpg"
+                                alt="Castora">
+                        </div>
+                      </div> 
+                   
+                      
+                     <div class=" game-description-card ">
+                     
+                        <h2 class="game-name big-screen-only">CASTORA</h2>
+                     <div class="game-description-area" >
+                        
+                        <ul>
+                            <li class="description-item translate" id="castora-1">Second Most Voted Game at Global Game Jam 2020 - Curitiba</li>
+                            <li class="description-item translate" id="castora-2">Local Multiplayer  (Cooperative)</li>
+                            <li class="description-item translate" id="castora-3">Made with Unity</li>
+                            <li class="description-item translate" id="castora-4">Joysticks Supported</li>
+                            <li class="description-item translate" id="castora-5"><a href="http://alexfroelich.itch.io/castora"> PLAY  </a></li>
+                        </ul>   
+                    </div> 
+                    
+                </div> 
+              
+            </div> 
+           
+
+            
+          
+                <div class="card">
+                    <h2 class="game-name mobile-only">BRIGA DE ERMITÃO</h2>
+                    <div class="game-description-card-left" >
+                        <h2 class="game-name big-screen-only">BRIGA DE ERMITÃO</h2>
+                        <div class="game-description-area">
+                           
+                            <ul>
+                                <li class="description-item translate" id="ermitao-1">Most Voted Game at Global Game Jam 2019 - Curitiba</li>
+                                <li class="description-item translate" id="ermitao-2">Local Multiplayer (Versus)</li>
+                                <li class="description-item translate" id="ermitao-3">Made With Unity</li>
+                                <li class="description-item translate" id="ermitao-4"> Uses 'Makey Makey' as Input System</li>
+                                <li class="description-item"><a href="https://connect.unity.com/post/5c5224f8edbc2a0020ae9a55">VIDEO</a></li>
+                                
+                            </ul>  
+                           
+                        </div> 
+                    </div>
+                    <div class="card-image"> 
+                        <img class="game-image" id="ermitao-main-image"
                             src="assets/ermitaoLogo.png"
                             alt="Briga de Ermitão">
-                        <div class="game-description" >
-                            <div class="description-text">
-                                <h2 >BRIGA DE ERMITÃO</h2>
-                                <ul>
-                                    <li class="description-item">Jogo mais votado da Global Game Jam 2019 - Curitiba</li>
-                                    <li class="description-item">Multiplayer Local (Cooperativo)</li>
-                                    <li class="description-item"> Usa Makey Makey como sistema de input</li>
-                                    <li class="description-item"><a href="https://connect.unity.com/post/5c5224f8edbc2a0020ae9a55">VIDEO</a></li>
-                                    <li></li>
-                                </ul>  
-                            </div> 
+
+                            <div class="game-gallery" >
+                                <img class="game-gallery-image ermitao-img"
+                                    src="assets/ermitaoLogo.png"
+                                    alt="Ermitao">
+                                <img class="game-gallery-image ermitao-img"
+                                    src="assets/ermitaoGameplay.png"
+                                    alt="Ermitao">
+                                <img class="game-gallery-image ermitao-img"
+                                    src="assets/ErmitaoPOW.png"
+                                    alt="Ermitao">
+                                <img class="game-gallery-image ermitao-img"
+                                    src="assets/ErmitaoLatilson.png"
+                                    alt="Ermitao">
+                            </div>
                         </div>
+                        </div> 
+                        
+                   
+                    <div class="card">
+                        <h2 class="game-name mobile-only">SATELLIGHT</h2>
+                        <div class="card-image">
+                        <img class="game-image" id="satellight-main-image"
+                            src="assets/satellight_splash_mini.png"
+                            alt="Satellight">
+
+                            <div class="game-gallery" >
+                                <img class="game-gallery-image satellight-img"
+                                    src="assets/satellight_splash_mini.png"
+                                    alt="Satellight">
+                                <img class="game-gallery-image satellight-img"
+                                    src="assets/satellight_1.png"
+                                    alt="Satellight">
+                                <img class="game-gallery-image satellight-img"
+                                    src="assets/satellight_2.png"
+                                    alt="Satellight">
+                                <img class="game-gallery-image satellight-img"
+                                    src="assets/satellight_3.png"
+                                    alt="Satellight">
+                            </div>
+                        </div> 
+                        <div class=" game-description-card ">
+                        
+                            <h2 class="game-name big-screen-only">SATELLIGHT</h2>  
+                            <div class="game-description-area" >
+                                
+                                    <ul>
+                                        <li class="description-item translate" id="satellight-1">Puzzle Game for Android Devices</li>
+                                        <li class="description-item translate" id="satellight-2">More Than 40 Levels</li>
+                                        <li class="description-item translate" id="satellight-3">Made With Unity</li>
+                                        <li class="description-item translate" id="satellight-4">Available in Both English and Portuguese</li>
+                                        <li class="description-item translate" id="satellight-5"><a href="https://www.youtube.com/watch?v=DtrJE5TOvbY">VIDEO</a></li>
+                                        <!--<li class="description-item translate" id="satellight-6">Available at <a href=" https://play.google.com/store/apps/details?id=com.CorgonautaStudio.Satellight">
+                                            PLAYSTORE</a></li>
+                                        -->
+                                    
+                                    </ul>   
+                                
+                            </div>   
+                       
+                        </div>
+                      
                     </div>
 
                     <div class="card">
-                       
-                        <img class="game-image"
-                            src="assets/splash_satellight.png"
-                            alt="Satellight">
-                        <div class="game-description" >
-                            <h2 >SATELLIGHT</h2>
+                        <h2 class="game-name mobile-only">TERRAFORM</h2>
+                        <div class="game-description-card-left" >
+                            <h2 class="game-name big-screen-only">TERRAFORM</h2>
+                            <div class="game-description-area">
+                               
                                 <ul>
-                                    <li class="description-item">Jogo estilo puzzle para dispositivos Android</li>
-                                    <li class="description-item">Mais de 40 fases</li>
-                                    <li class="description-item">Disponível em Inglês e Português</li>
-                                    <li class="description-item">Publicado na <a href=" https://play.google.com/store/apps/details?id=com.CorgonautaStudio.Satellight">
-                                        PLAYSTORE</a></li>
-                                   
-                                </ul>   
-                        </div>     
-                    </div>
+                                    <li class="description-item translate" id="terraform-1">Shown at SBGames 2017</li>
+                                    <li class="description-item translate" id="terraform-2">Single Player</li>
+                                    <li class="description-item translate" id="terraform-3">Made With Unity</li>
+                                    <li class="description-item translate" id="terraform-4">Final Project of Specialization Course</li>
+                                    <li class="description-item translate" id="terraform-5"><a href="https://youtu.be/vCL4F_Z0S9I">VIDEO</a></li>
+                                    
+                                </ul>  
+                               
+                            </div> 
+                        </div>
+                        <div class="card-image"> 
+                            <img class="game-image" id="terraform-main-image"
+                                src="assets/terraform_gameplay2.png"
+                                alt="Terraform">
+    
+                                <div class="game-gallery" >
+                                    <img class="game-gallery-image terraform-img"
+                                    src="assets/terraform_gameplay2.png"
+                                    alt="Terraform">
+
+                                    <img class="game-gallery-image terraform-img"
+                                        src="assets/terraform_npc.png"
+                                        alt="Terraform">
+                                    <img class="game-gallery-image terraform-img"
+                                        src="assets/bossataque1.gif"
+                                        alt="Terraform">  
+                                    <img class="game-gallery-image terraform-img"
+                                        src="assets/purificaçao.gif"
+                                        alt="Terraform">   
+                                </div>
+                            </div>
+                            </div> 
 
                 </div>
                
@@ -178,6 +264,15 @@
                 <p class="item-title">Freelancer</p>
                 <p class="item-info">2019 - ATUALMENTE</p>
                 <p class="item-description">Desenvolvedor Unity: Desenvolvimento de jogos</p>
+                
+                <ul>
+                   
+                    <ul>
+                       
+                        <li>Jelly Crusher - Disponível em    <a href="https://play.google.com/store/apps/details?id=com.jellyama">GooglePlay</a></li>
+                        <li>PSYCKD - Disponível em    <a href="https://play.google.com/store/apps/details?id=com.Insightful.Psychka">GooglePlay</a></li>
+                    </ul>
+                </ul>
 
                 <p class="item-title">Corgonauta Studio</p>
                 <p class="item-info">2017 - ATUALMENTE</p>
@@ -234,4 +329,5 @@
     </main>
 </body>
 <script src="script.js"></script>
+<script src="changeLanguage.js"></script>
 </html>
