@@ -26,8 +26,16 @@ const aboutTitle = {id:'about-title', en : 'ABOUT', pt : 'SOBRE' }
 const aboutText = {
     id:'about-text', 
     en : 'Game programmer (Unity and Godot Engine). Also knows Python, Javascript, HTML, CSS, C++ and Swift.', 
-    pt : 'Desenvolvedor de Jogos Digitais (Unity). Também tem conhecimentos de Swift, JavaScript, HTML, CSS, C++ e Python' 
+    pt : 'Desenvolvedor de Jogos Digitais (Unity). Também tem conhecimentos de Swift, JavaScript, HTML, CSS, C++ e Python.'
+     
 }
+const aboutText2 = {
+    id:'about-text-2', 
+    en : 'Languages: Portuguese (native), English, Spanish(intermediate) and French (intermediate).', 
+    pt : 'Idiomas: Português, Inglês, Espanhol(intermediário) e Francês (intermediário).' 
+     
+}
+
 
 //Showcase Section
 const showcaseTitle = {
@@ -139,7 +147,7 @@ const  terraform5= {
 //#endregion Terraform
 //
 texts.push(headerAbout, headerShowcase, position,
-    aboutTitle,aboutText, showcaseTitle,
+    aboutTitle,aboutText,aboutText2, showcaseTitle,
     castora1, castora2, castora3, castora4, 
     ermitao1, ermitao2, ermitao3, ermitao4,
     satellight1, satellight2, satellight3, satellight4,
