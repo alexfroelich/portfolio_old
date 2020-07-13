@@ -1,17 +1,35 @@
+:root {
+    --main-bg-color: rgb(255, 254, 245);
+    --main-section-title-color:  rgb(72, 72, 72);
+    --main-item-title-color: rgb(7, 7, 7);
+    --border-color: rgb(72, 72, 72);
+    --body-color: rgb(72, 72, 72);
+    --hover-background-color:black;
+    --hover-color: white;
+    --box-shadow-color:  rgba(28, 28, 29, 0.35);
+}
 body{
-    color: rgb(72, 72, 72);
+    color: var(--body-color);
    
     font-family: 'Lato', sans-serif;
     box-sizing: border-box; 
     font-size: 1.3em;
-    background-color: rgb(255, 254, 245);
+    background-color: var(--main-bg-color);
     
    
 }
 
 .dark-mode{
-    color: white;
-    background-color: rgb(17, 23, 39);
+    --main-darkmode-color: rgb(255, 255, 250);
+    --main-bg-color:  rgb(32, 32, 32);
+    --main-section-title-color:  var(--main-darkmode-color);
+    --main-item-title-color: var(--main-darkmode-color);
+    --border-color: var(--main-darkmode-color);
+    --body-color: var(--main-darkmode-color);
+    --hover-background-color : var(--main-darkmode-color);
+    --hover-color: black;
+    --box-shadow-color:  black;
+   /* background-color: rgb(17, 23, 39);
     /*background-color: rgb(32, 32, 32);*/
 }
 
@@ -38,7 +56,7 @@ i{
         ". about about about about .  "
         "showcase showcase showcase showcase showcase showcase"
         "education education education education . ."
-       
+        
         "work work work work . ."
         "contact contact contact contact contact contact";
     box-shadow: 0 5px 10px 0 rgba(28, 28, 29, 0.35);
@@ -54,15 +72,28 @@ i{
 }
 .header{
     grid-area: header;
-   display: none;
+ 
    
 }
 .header-items{
     text-decoration: none;
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     flex-direction: row;
-    justify-content: space-between;
+    position: sticky;
+    justify-content: flex-end;
+   
+}
+.header-item{
+    cursor: pointer;
+    margin: 0%;
+    padding: 1%;
+    border-radius: 10%;
+   
+    }
+.header-item:hover{
+    background-color: var(--hover-background-color);
+    color:  var(--hover-color);
 }
 .header > ul{
     list-style:  none ;
@@ -99,7 +130,7 @@ button{
 .about{
     grid-area: about;
     border-style: solid;
-    border-color: rgb(72, 72, 72);
+    border-color:var( --border-color);
     border-radius: 10px;
 }
 .showcase{
@@ -107,6 +138,7 @@ button{
    
    text-align: center;
 }
+
 .work{
     grid-area: work;
 }
@@ -128,12 +160,12 @@ button{
 }
 .section-title{
     font-size: 3rem;
-    color: rgb(78, 76, 76);
+    color:var(--main-section-title-color);;
 }
 .item-title{
     font-size: 1.2em;
     font-weight: 700;
-    color: rgb(7, 7, 7);
+    color:var(--main-item-title-color);
     
     margin-bottom: 5px;
 }
@@ -202,7 +234,7 @@ button{
 .game-description-card-left{
    
     text-align: justify;
-    border-color: rgb(72, 72, 72);
+    border-color: var(--border-color);
     border-right-style: none;
     border-width: 1%;
     margin-right: 5%;
@@ -233,7 +265,7 @@ button{
     height: 100%;
     margin-bottom: 0%;
     border-radius: 12px;
-    box-shadow: 0 5px 10px 0 rgba(28, 28, 29, 0.35);
+    box-shadow: 0 5px 10px 0 var(--box-shadow-color);
     grid-gap: 0%;
    
   }
@@ -269,7 +301,7 @@ button{
         font-size: small; 
     }
 .header{
-    display: none;
+    
 }
 
     .resume{
@@ -334,7 +366,9 @@ button{
         list-style: none;
         text-decoration: none;
      }
-     
+     .header-item{
+         padding: 1em;
+     }
     .about-text{
         text-align: center;
         
@@ -371,6 +405,10 @@ button{
      }
     .card-image{
         grid-area: card-image;
+    }
+    .header-item:hover{
+        background-color: var(--main-bg-color);
+        color:  var(--main-section-title-color);
     }
     .mobile-only{
         display: block;

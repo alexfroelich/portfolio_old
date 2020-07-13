@@ -3,7 +3,7 @@ var languages = {
     PORTUGUESE: 2
 
 }
-var language = languages.PORTUGUESE
+var language = languages.ENGLISH
 
 
 //Array to Store Elements to Translate
@@ -25,7 +25,7 @@ const position = {id:'position', en : 'Developer', pt : 'Desenvolvedor' }
 const aboutTitle = {id:'about-title', en : 'ABOUT', pt : 'SOBRE' }
 const aboutText = {
     id:'about-text', 
-    en : 'Game programmer (Unity and Godot Engine). Also knows Python, Javascript, HTML, CSS, C++ and Swift.', 
+    en : 'Game programmer (Unity). Also knows Python, Javascript, HTML, CSS, C++ and Swift.', 
     pt : 'Desenvolvedor de Jogos Digitais (Unity). Também tem conhecimentos de Swift, JavaScript, HTML, CSS, C++ e Python.'
      
 }
@@ -136,7 +136,7 @@ const  terraform3= {
    }
 const  terraform4= {
     id:'terraform-4', 
-    en : 'Final Project of Specialization Course', 
+    en : 'Final Project (Specialization Course)', 
     pt : 'Projeto Final Do Curso de Especialização em Desenvolvimentos de Jogos Digitais' 
    }
 const  terraform5= {
@@ -145,13 +145,187 @@ const  terraform5= {
     pt : 'Disponível para Jogar na ' 
    }  
 //#endregion Terraform
+//#region Education
+const educationTitle = {
+    id:'education-title', 
+    en : 'EDUCATION', 
+    pt : 'FORMAÇÃO' 
+   }
+const specializationTitle = {
+    id:'specialization-title', 
+    en : 'Specialization: Game Development', 
+    pt : 'Especialização: Desenvolvimento de Jogos Digitais' 
+}
+const specializationDescription = {
+    id:'specialization-description', 
+    en : 'Projects developed during the course: ', 
+    pt : 'Projetos desenvolvidos durante o curso: ' 
+}
+const specializationItem1 = {
+    id:'specialization-item1', 
+    en : '<p><a href="https://youtu.be/vCL4F_Z0S9I">Terraform</a> - Final Project, made with Unity</p>', 
+    pt : '<p><a href="https://youtu.be/vCL4F_Z0S9I">Terraform</a> - Projeto Final, desenvolvido na Unity</p>' 
+}
+const specializationItem2 = {
+    id:'specialization-item2',  
+    en : '<p><a href="https://www.youtube.com/watch?v=pyEFtJ7MH80"> Play the Shapes </a> - Rhythm Game, developed for iOS (Swift)</p>', 
+    pt : '<p><a href="https://www.youtube.com/watch?v=pyEFtJ7MH80"> Play the Shapes </a> - Jogo rítmico, desenvolvido em Swift</p>'
+}
+const specializationItem3 = {
+    id:'specialization-item3', 
+    en : '<p><a href="https://www.youtube.com/watch?v=q0ay0OURFAk">SqShooter</a> - Top-Down shooter developed using only JavaScript </p>',
+    pt : '<p><a href="https://www.youtube.com/watch?v=q0ay0OURFAk">SqShooter</a> - Top-Down shooter desenvolvido utilizando apenas JavaScript</p> ',  
+}
+const adaDescription = {
+    id:'ada-description', 
+    en : 'Program, in collaboration with Apple, for capacitation of students for development of iOS applications', 
+    pt : 'Programa, em colaboração com a Apple, para capacitação de estudantes para desenvolvimento de aplicativos para iOS' 
+}
+const engineeringTitle = {
+    id:'engineering-title', 
+    en : 'Electrical Engineering - Telecommunications', 
+    pt : 'Engenharia Elétrica - Telecomunicações' 
+   }
+   const engineeringDescription = {
+    id:'engineering-description', 
+    en : 'Wireless communication system for automobile system warning', 
+    pt : 'Projeto Final: Sistema de comunicação sem fio para aviso de acidentes automobilísticos' 
+   }  
+//#endregion Education
+//#region professional
+const professionalExperience = {
+    id:'professional', 
+    en : 'PROFESSIONAL EXPERIENCE', 
+    pt : 'EXPERIÊNCIA PROFISSIONAL' 
+}
+const freelanceInfo = {
+    id:'freelance-info', 
+    en : '2019 - Now', 
+    pt : '2019 - ATUALMENTE' 
+}
+const freelanceDescription = {
+    id:'freelance-description', 
+    en : 'Unity Developer - Game Developer', 
+    pt : 'Desenvolvedor Unity: Desenvolvimento de jogos' 
+}
+const freelanceJelly = {
+    id:'freelance-jelly', 
+    en : '<p>Jelly Crusher - 2D game where the player needs to destroy a jelly before insects eat it (not released yet)</p>', 
+    pt : '<p>Jelly Crusher - Jogo 2D onde o jogador precisa destruir a geléia antes que os insetos comam (ainda não lançado)</p>' 
+}
+const freelancePsyckd = {
+    id:'freelance-psyckd', 
+    en : '<p>PSYCKD - 2D Platform available at <a href="https://play.google.com/store/apps/details?id=com.Insightful.Psychka">GooglePlay</a></p>', 
+    pt : '<p>PSYCKD - Jogo plataforma 2D disponível na    <a href="https://play.google.com/store/apps/details?id=com.Insightful.Psychka">GooglePlay</a></p>' 
+}
+const corgonautaInfo = {
+    id:'corgonauta-info', 
+    en : '2017 - NOW', 
+    pt : '2017 - ATUALMENTE' 
+}
+const corgonautaDescription = {
+    id:'corgonauta-description', 
+    en : 'Corgonauta Studio is a small group that started to make games at the university, developed a game for Android and now participates of game jams. It is composed by three people: Alexander Froelich (developer), Heloá Michelin(designer) and Gabriel Oliveira(musician)', 
+    pt : 'Corgonauta Studio é um grupo que começou a fazer jogos na Universidade, \
+    desenvolveu um jogo de estilo puzzle disponibilizado para dispositivos Android, \
+    e também participa de Game Jams. \
+    É um grupo composto por três pessoas: \
+    Alexander Froelich (programador), Heloá Michelin (designer) \
+    e Gabriel Oliveira (músico).' 
+}
+const corgonautaItem1 = {
+    id:'corgonauta-item1', 
+    en : '<p>Awarded as “Jammer\'s Choice” at Global Game Jam 2019 (Curitiba) with the game "Briga de Ermitão" </p>', 
+    pt : '<p>Global Game Jam: Contemplado com o prêmio “Escolha dos Jammers” na Global Game Jam 2019 (Curitiba), com o jogo “Briga de Ermitão”</p>' 
+}
+const corgonautaItem2 = {
+    id:'corgonauta-item2', 
+    en : '<p>Satellight: Puzzle game  for Android devices</p>', 
+    pt : '<p>Satellight: Jogo de estilo puzzle para dispositivos Android</p>' 
+}
+const corgonautaItem3 = {
+    id:'corgonauta-item3', 
+    en : '<p>Terraform (demo): This demo was developed as the final project for the Game Development Specialization course. This demo was shown at SBGames 2017</p>', 
+    pt : '<p>Terraform (demo): Esta demo de jogo foi desenvolvida como projeto final da especialização em Desenvolvimento de Jogos Digitais. Foi também exposta na SBGames 2017.</p>' 
+}
+const pacerInfo = {
+    id:'pacer-info', 
+    en : 'DEC 2018 - JUN 2019', 
+    pt : 'DEZ 2018 - JUN 2019' 
+}
+const pacerItem1 = {
+    id:'pacer-item1', 
+    en : 'Unity Developer - Development and improvement of functionalities of a boarding system for airports', 
+    pt : 'Desenvolvedor Unity - Desenvolvimento e aprimoramento de funcionalidades de sistema de embarque ' 
+}
+const pacerItem2 = {
+    id:'pacer-item2', 
+    en : 'Development of the interface of auxiliary screens, and communication between them and the main system', 
+    pt : 'Desenvolvimento de interface de telas auxiliares e comunicação do sistema principal com as telas' 
+}
+const copelInfo = {
+    id:'copel-info', 
+    en : 'AUG 2013 - OCT 2013', 
+    pt : 'AGO 2013 - OUT 2013' 
+}
+const copelDescription = {
+    id:'copel-description', 
+    en : 'Configuration and tests on telecommunication equipment.', 
+    pt : 'Configuração e testes de equipamentos de telecomunicações.' 
+}
+const pibitInfo = {
+    id:'pibit-info', 
+    en : 'SEP 2011 - SEP 2012', 
+    pt : 'SET 2011 - SET 2012' 
+}
+const pibitDescription = {
+    id:'pibit-description', 
+    en : 'Undergraduate research scholar: \
+    Treatment and rebuilding of 3D medical images, aiming to understand how they are made and used; starting the process of registration and fusion of these images, for further utilization in neuronavigation systems.', 
+    pt : 'Programa de Iniciação Científica: \
+    Tratamento e reconstrução de imagens médicas 3D, \
+     com objetivo de entender como são feitas e utilizadas; início do processo de registro  e fusão das imagens, \
+      para uso futuro em sistemas de neuronavegação.' 
+}
+
+const ccaaInfo = {
+    id:'ccaa-info', 
+    en : 'FEV 2009 - JUL 2011', 
+    pt : 'FEV 2009 - JUL 2011' 
+}
+
+const ccaaDescription = {
+    id:'ccaa-description', 
+    en : 'English Teacher', 
+    pt : 'Professor de Inglês' 
+}
+
+//#endregion professional
+const contact = {
+    id:'contact', 
+    en : 'CONTACT', 
+    pt : 'CONTATO' 
+}
+//#region Contact
+
+//#endregion Contact
 //
 texts.push(headerAbout, headerShowcase, position,
     aboutTitle,aboutText,aboutText2, showcaseTitle,
     castora1, castora2, castora3, castora4, 
     ermitao1, ermitao2, ermitao3, ermitao4,
     satellight1, satellight2, satellight3, satellight4,
-    terraform1, terraform2, terraform3, terraform4
+    terraform1, terraform2, terraform3, terraform4,
+    educationTitle, specializationTitle, specializationItem1, specializationItem2, specializationItem3, specializationDescription,
+    adaDescription, engineeringTitle, engineeringDescription,
+    professionalExperience, freelanceInfo,freelanceDescription, freelanceJelly, freelancePsyckd,
+    corgonautaInfo, corgonautaDescription, corgonautaItem1, corgonautaItem2, corgonautaItem3,
+    pacerInfo, pacerItem1, pacerItem2,
+    copelInfo, copelDescription,
+    pibitInfo, pibitDescription,
+    ccaaInfo, ccaaDescription,
+    contact
+
     )
 
 
